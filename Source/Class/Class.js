@@ -50,7 +50,7 @@ Class.Mutators = {
 
 	Implements: function(self, klasses){
 		$splat(klasses).each(function(klass){
-			Class.prototying = klass;
+			Class.prototyping = klass;
 			$extend(self, ($type(klass) == 'class') ? new klass : klass);
 			delete Class.prototyping;
 		});
